@@ -1,0 +1,13 @@
+@use "../abstract/variaveis";
+@use "../abstract/mixins";
+
+#desconto {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    text-align: center;
+
+    h4 {
+        @include mixins.estilos-fontes(variaveis.$ft-titulos, 1.6rem, variaveis.$cor-primaria);
+    }
+}

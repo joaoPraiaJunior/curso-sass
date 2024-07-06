@@ -1,0 +1,9 @@
+@use "../abstract/variaveis";
+@use "../abstract/mixins";
+
+#desconto {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    text-align: center;
+}

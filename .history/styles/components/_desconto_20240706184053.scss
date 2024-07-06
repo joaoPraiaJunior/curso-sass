@@ -1,0 +1,26 @@
+@use "../abstract/variaveis";
+@use "../abstract/mixins";
+
+#desconto {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    text-align: center;
+
+    h4 {
+        @include mixins.estilos-fontes(variaveis.$ft-titulos, 2.4rem, variaveis.$cor-primaria);
+    }
+    p {
+        @include mixins.estilos-fontes(variaveis.$ft-textos, 1.6rem, variaveis.$cor-primaria);
+    }
+
+    .input-btn {
+        $largura-input: 790px;
+        width: $largura-input;
+        height: 65px;
+        margin: 0 auto;
+        border: 1px solid variaveis.$cor-secundaria;
+        border-radius: 65px;
+
+    }
+}

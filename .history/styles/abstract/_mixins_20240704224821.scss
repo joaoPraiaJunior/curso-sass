@@ -1,0 +1,4 @@
+@mixin margem-centralizada($width) {
+    width: $width;
+    margin: 0 auto;
+}

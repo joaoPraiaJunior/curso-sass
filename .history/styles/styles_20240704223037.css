@@ -1,0 +1,86 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  background-color: #E8F5C8;
+  padding: 3.2rem;
+}
+header nav {
+  border-top: 1px solid #0C0421;
+  width: 80%;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 4.8rem;
+  padding: 0;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #0C0421;
+  text-decoration: none;
+}
+
+#home {
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+}
+#home .home-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1040px;
+}
+#home .home-conteudo .textos-home {
+  max-width: 464px;
+}
+#home .home-conteudo .textos-home h1 {
+  font-family: "Krona One", sans-serif;
+  font-size: 4.2rem;
+  color: #0C0421;
+  margin-bottom: 3.2rem;
+}
+#home .home-conteudo .textos-home h1 span {
+  color: #4e75ff;
+}
+#home .home-conteudo .textos-home .btn-main {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #E8F5C8;
+  background-color: #4e75ff;
+  width: 28rem;
+  border: none;
+  padding: 2.4rem;
+  border-radius: 40px;
+  cursor: pointer;
+}
+#home .home-conteudo .img-home {
+  max-width: 474px;
+}
+#home .home-conteudo .img-home img {
+  width: 100%;
+}
+
+#nosso-espaco {
+  width: 80%;
+  margin: 0 auto;
+}/*# sourceMappingURL=styles_20240704223037.css.map */

@@ -1,0 +1,8 @@
+@use "../abstract/variaveis";
+@use "../abstract/mixins";
+
+#contatos {
+    display: flex;
+    justify-content: space-between;
+    @include mixins.margem-centralizada(80%);
+}

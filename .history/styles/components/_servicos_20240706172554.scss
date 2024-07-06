@@ -1,0 +1,21 @@
+@use "../abstract/variaveis";
+@use "../abstract/mixins";
+
+#servico {
+    background: variaveis.$gradiente-primario;
+
+    .cards {
+        display: flex;
+        gap: 2.4rem;
+        @include mixins.margem-centralizada(80%);
+        padding: 3.2rem 0;
+
+        .card {
+            background: variaveis.$gradiente-secundario;
+            text-align: center;
+            border: 1px solid #fff;
+            padding: 1.6rem 2rem;
+            border-radius: 3rem
+        }
+    }
+}

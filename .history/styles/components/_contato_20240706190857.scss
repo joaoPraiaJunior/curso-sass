@@ -1,0 +1,22 @@
+@use "../abstract/variaveis";
+@use "../abstract/mixins";
+
+#contatos {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  @include mixins.margem-centralizada(80%);
+
+  .contatos-imgs {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 50%;
+  }
+
+  .contatos-form {
+    max-width: 50%;
+  }
+}

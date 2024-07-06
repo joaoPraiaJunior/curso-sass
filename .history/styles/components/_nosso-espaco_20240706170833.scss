@@ -1,0 +1,32 @@
+@use "../abstract/variaveis";
+@use "../abstract/mixins";
+
+#nosso-espaco {
+    @include mixins.margem-centralizada(80%);
+    .detalhes {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2rem;
+        width: 100%;
+        padding: 3.2rem 0;
+        .imgs-espaco {
+            max-width: 500px;
+        }
+
+        .espaco-textos {
+            @extend .imgs-espaco;
+            .titulo {
+                @include mixins.estilos-fontes(variaveis.$ft-titulos, 2.4rem, variaveis.$cor-secundaria);
+                font-weight: 500;
+            }
+
+            .info {
+                @include mixins.estilos-fontes(variaveis.$ft-textos, 1.2rem, variaveis.$cor-primaria);
+            }
+            .separador {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@use "./abstract/variaveis";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#home {
+  background: $gradiente-primario;
+
+  .home-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1040px;
+    .textos-home {
+      max-width: 464px;
+      h1 {
+        font-family: $ft-titulos;
+        font-size: 4.2rem;
+        color: $cor-primaria;
+        margin-bottom: 3.2rem;
+        span {
+          color: $cor-secundaria;
+        }
+      }
+
+      .btn-main {
+        font-family: $ft-textos;
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: $cor-quaternaria;
+        background-color: $cor-secundaria;
+        width: 28rem;
+        border: none;
+        padding: 2.4rem;
+        border-radius: 40px;
+        cursor: pointer;
+      }
+    }
+
+    .img-home {
+      max-width: 474px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+#nosso-espaco {
+  width: 80%;
+  margin: 0 auto;
+}

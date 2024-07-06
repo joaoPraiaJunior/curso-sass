@@ -1,0 +1,9 @@
+@use '../abstract/variaveis'
+@use '../abstract/mixins'
+
+footer
+    @include mixins.estilos-fontes(variaveis.$ft-textos, 1rem, variaveis.$cor-primaria)
+    text-align: center
+    background: variaveis.$cor-quaternaria
+    margin-top: 5rem
+    padding: 2rem

@@ -1,0 +1,10 @@
+@use "../abstract/variaveis";
+@use "../abstract/mixins";
+
+#servico {
+    background: variaveis.$gradiente-primario;
+
+    .cards {
+        @include mixins.margem-centralizada(80%);
+    }
+}

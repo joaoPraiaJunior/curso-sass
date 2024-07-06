@@ -1,0 +1,34 @@
+@use "../abstract/variaveis";
+@use "../abstract/mixins";
+
+#contatos {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  @include mixins.margem-centralizada(80%);
+
+  .contatos-imgs {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 50%;
+    img {
+      width: 100%;
+
+      &:nth-child(n + 2) {
+        width: 48%;
+      }
+    }
+  }
+  .contatos-form {
+    background: variaveis.$gradiente-primario;
+    max-width: 50%;
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+    .titulo {
+        @include mixins.estilos-fonts(variaveis.$ft-titulo, 1.9rem, variaveis.$cor-secundaria);    
+    }
+  }
+}
